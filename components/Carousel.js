@@ -37,7 +37,7 @@ const Carousel = () => {
             className="cc__image"
             style={{ backgroundImage: `url("/static/snow.jpg")` }}
           >
-            10
+            <div>10</div>
           </div>
         </div>
         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item) => {
@@ -45,9 +45,9 @@ const Carousel = () => {
             <div key={item} className="ccc__slide">
               <div
                 className="cc__image"
-                style={{ backgroundImage: `url("/static/snow.jpg")` }}
+                style={{ backgroundImage: `url("/static/${item % 2 === 0 ? "snow" : "sea"}.jpg")` }}
               >
-                {item}
+                <div>{item}</div>
               </div>
             </div>
           );
@@ -57,7 +57,7 @@ const Carousel = () => {
             className="cc__image"
             style={{ backgroundImage: `url("/static/snow.jpg")` }}
           >
-            1
+            <div>1</div>
           </div>
         </div>
       </div>

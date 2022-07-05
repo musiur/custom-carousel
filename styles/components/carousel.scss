@@ -20,10 +20,29 @@
 
 .cc__image {
     width: 100vw;
-    height: 90vh;
+    min-height: 100vh;
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+
+    position: relative;
+
+    div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+
+        font-size: 400px;
+        line-height: 0;
+        font-weight: bolder;
+        color: #ffffff93;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .cc__controller {
